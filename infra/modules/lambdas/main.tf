@@ -47,8 +47,10 @@ resource "aws_iam_role_policy_attachment" "greeting_lambda_s3_policy_attachment"
 
 data "archive_file" "lambda_zip" {
   type        = "zip"
-  source_file = "${path.root}/../lambdas/greetings_lambda/index.mjs"
-  output_path = "lambda.zip"
+  source_file = "../../../app/index.mjs"
+  output_path = "../../../app/lambda.zip"
+  # source_file = "${path.root}/../lambdas/greetings_lambda/index.mjs"
+ # output_path = "lambda.zip"
 }
 
 resource "aws_lambda_function" "greeting_lambda" {
