@@ -151,10 +151,10 @@ jobs:
           header: "Terraform Documentation "
           path: "./infra/environments/${{ github.event.inputs.environment || 'dev' }}/README.md"
     
-      # Step: Apply Terraform if PR is merged
-      - name: Apply Terraform on Merge the PR
-        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
-        run: |
-          cd ./infra/environments/${{ github.event.inputs.environment || 'dev' }}
-          terraform init
-          terraform apply -auto-approve
+      # # Step: Apply Terraform if PR is merged
+      # - name: Apply Terraform on Merge the PR
+      #   if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+      #   run: |
+      #     cd ./infra/environments/${{ github.event.inputs.environment || 'dev' }}
+      #     terraform init
+      #     terraform apply -auto-approve
