@@ -1,6 +1,3 @@
-// Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
-// SPDX-License-Identifier: MIT-0
-
 resource "aws_iam_role" "greeting_lambda_execution_role" {
   name = "greeting_lambda_execution_role"
 
