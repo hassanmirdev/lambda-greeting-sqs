@@ -1,29 +1,9 @@
 name: Upload Image to S3 and Invoke Lambda
 on:
-  workflow_dispatch:
-    inputs:
-      image-path:
-        description: "Path to the image to upload"
-        required: true
-        type: string
-      s3-bucket:
-        description: "S3 Bucket Name"
-        required: true
-        type: string
-      lambda-function-name:
-        description: "Lambda Function Name"
-        required: true
-        type: string
-      event-file-path:
-        description: "Path to the event JSON file for Lambda"
-        required: true
-        type: string
-
+  workflow_dispatch: # This allows you to manually trigger the workflow
 permissions:
   contents: read
   id-token: write
-  s3: write
-  lambda: invoke
 
 jobs:
   upload-and-invoke:
@@ -31,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step: Checkout code (if event.json is inside your repo)
+      # Step: Checkout code (fetch repository content)
       - name: Checkout Code
         uses: actions/checkout@v3
 
@@ -47,8 +27,11 @@ jobs:
       # Step: Upload image to S3
       - name: Upload Image to S3
         run: |
-          IMAGE_PATH="${{ github.event.inputs.image-path }}"
-          BUCKET_NAME="${{ github.event.inputs.s3-bucket }}"
+          # Hardcoded values for the image and S3 bucket
+          IMAGE_PATH="infra/environments/dev/johnsmith.jpg"
+          BUCKET_NAME="buckettostoreemployeeimages"
+          
+          # Upload image to the S3 bucket
           aws s3 cp "$IMAGE_PATH" "s3://$BUCKET_NAME/$(basename $IMAGE_PATH)"
         env:
           AWS_REGION: us-east-1
@@ -56,8 +39,11 @@ jobs:
       # Step: Invoke Lambda function
       - name: Invoke Lambda function
         run: |
-          FUNCTION_NAME="${{ github.event.inputs.lambda-function-name }}"
-          EVENT_FILE_PATH="${{ github.event.inputs.event-file-path }}"
+          # Hardcoded values for the Lambda function and event file
+          FUNCTION_NAME="greeting_lambda"
+          EVENT_FILE_PATH="infra/environments/dev/event.json"
+          
+          # Invoke the Lambda function using the event file
           aws lambda invoke \
             --function-name "$FUNCTION_NAME" \
             --cli-binary-format raw-in-base64-out \
