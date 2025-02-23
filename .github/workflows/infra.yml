@@ -1,4 +1,4 @@
-name: Deploy app to lambda Function with Amazon SQS
+name: Deploy app to lambda Function with Amazon SQS.
 run-name: infra prov
 on:
  workflow_dispatch:
