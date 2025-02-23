@@ -173,7 +173,8 @@ resource "aws_iam_role_policy" "api_gateway_log_policy" {
 # Enable logging on API Gateway Stage
 resource "aws_api_gateway_stage" "greeting_api_stage" {
   rest_api_id = aws_api_gateway_rest_api.greeting_api.id
-  stage_name  = var.tag_environment
+  stage_name = "${var.tag_environment}-${timestamp()}"
+
 
   deployment_id = aws_api_gateway_deployment.greeting_api_deployment.id
 
@@ -193,7 +194,6 @@ resource "aws_api_gateway_stage" "greeting_api_stage" {
 lifecycle {
     create_before_destroy = true
   }
-
 
   depends_on = [aws_api_gateway_deployment.greeting_api_deployment]
 }
