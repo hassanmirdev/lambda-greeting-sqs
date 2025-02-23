@@ -128,7 +128,7 @@ resource "aws_iam_role_policy_attachment" "lambda_cloudwatch_attach" {
 }
 
 resource "aws_cloudwatch_log_group" "lambda-log-group" {
-  name              = "/aws/lambda/${aws_lambda_function.greeting_lambda.function_name}-v2"
-  retention_in_days = 30
+  name              = "/aws/lambda/${aws_lambda_function.greeting_lambda.function_name}"
+  retention_in_days = 10
 }
 
