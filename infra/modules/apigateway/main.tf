@@ -144,6 +144,31 @@ resource "aws_iam_role" "api_gateway_log_role" {
   })
 }
 
+# Create CloudWatch Log Group for API Gateway logs
+resource "aws_cloudwatch_log_group" "api_gateway_log_group" {
+  name              = "aws/api-gateway/greeting-api-logs"
+  retention_in_days = 7
+}
+
+# Create IAM Role for API Gateway to write logs to CloudWatch
+resource "aws_iam_role" "api_gateway_log_role" {
+  name = "api_gateway_log_role"
+
+  assume_role_policy = jsonencode({
+    Version = "2012-10-17",
+    Statement = [
+      {
+        Action = "sts:AssumeRole",
+        Principal = {
+          Service = "apigateway.amazonaws.com"
+        },
+        Effect   = "Allow"
+        Sid      = ""
+      }
+    ]
+  })
+}
+
 # Create IAM Policy for API Gateway to write logs to CloudWatch
 resource "aws_iam_role_policy" "api_gateway_log_policy" {
   name = "api_gateway_log_policy"
@@ -190,7 +215,6 @@ resource "aws_api_gateway_stage" "greeting_api_stage" {
     })
   }
 
-  logging_level     = "INFO"
-  data_trace_enabled = true
+  depends_on = [aws_api_gateway_deployment.greeting_api_deployment]
 }
 
