@@ -116,7 +116,7 @@ resource "aws_iam_policy" "lambda_cloudwatch_policy" {
       {
         Action   = ["logs:CreateLogGroup", "logs:CreateLogStream", "logs:PutLogEvents"],
         Effect   = "Allow",
-        Resource = "arn:aws:logs:{region}:{account-id}:log-group:{log-group-name}" 
+        Resource = "arn:aws:logs:${data.aws_region.current.name}:${data.aws_caller_identity.current.account_id}:log-group:/aws/lambda/${aws_lambda_function.greeting_lambda_function.function_name}:*"
       }
     ]
   })
@@ -126,5 +126,6 @@ resource "aws_iam_role_policy_attachment" "lambda_cloudwatch_attach" {
   policy_arn = aws_iam_policy.lambda_cloudwatch_policy.arn
   role       = aws_iam_role.greeting_lambda_execution_role.name
 }
+
 
 
