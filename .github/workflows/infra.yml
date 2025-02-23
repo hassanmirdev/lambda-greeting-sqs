@@ -21,7 +21,8 @@ on:
        - main
 permissions:
   contents: read
-  pull-requests: write      
+  pull-requests: write 
+  id-token: write
 
 jobs:
   infra-prov:
