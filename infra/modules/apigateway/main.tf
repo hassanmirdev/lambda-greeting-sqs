@@ -189,6 +189,12 @@ resource "aws_api_gateway_stage" "greeting_api_stage" {
     })
   }
 
+
+lifecycle {
+    create_before_destroy = true
+  }
+
+
   depends_on = [aws_api_gateway_deployment.greeting_api_deployment]
 }
 
