@@ -1,19 +1,3 @@
-// Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
-// SPDX-License-Identifier: MIT-0
-
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 5.0"
-    }
-  }
-}
-
-provider "aws" {
-  region = "us-east-1" # Replace with your region
-}
-
 module "storage" {
   source          = "./modules/storage"
   src_bucket_name = "buckettostoreemployeeimages"
