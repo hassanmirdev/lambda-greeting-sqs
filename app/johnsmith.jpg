@@ -1,0 +1,2279 @@
+<!doctype html>
+<html 
+      lang="en"
+      dir="ltr">
+  <head>
+    <meta name="google-signin-client-id" content="721724668570-nbkv1cfusk7kk4eni4pjvepaus73b13t.apps.googleusercontent.com">
+    <meta name="google-signin-scope"
+          content="profile email https://www.googleapis.com/auth/developerprofiles https://www.googleapis.com/auth/developerprofiles.award">
+    <meta property="og:site_name" content="Google for Developers">
+    <meta property="og:type" content="website"><meta name="theme-color" content="#1e8e3e"><meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <link rel="manifest" href="/_pwa/developers/manifest.json"
+          crossorigin="use-credentials">
+    <link rel="preconnect" href="//www.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="//apis.google.com" crossorigin>
+    <link rel="preconnect" href="//www.google-analytics.com" crossorigin><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap">
+      <link rel="stylesheet"
+            href="//fonts.googleapis.com/css2?family=Material+Icons&family=Material+Symbols+Outlined&display=block"><link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/vd2dddc2199cd18ccf014281c77515e1e906f6b98324fd2a8b5fa9e92b09e8018/developers/css/app.css">
+      <link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/prod/vd2dddc2199cd18ccf014281c77515e1e906f6b98324fd2a8b5fa9e92b09e8018/developers/images/favicon-new.png">
+    <link rel="apple-touch-icon" href="https://www.gstatic.com/devrel-devsite/prod/vd2dddc2199cd18ccf014281c77515e1e906f6b98324fd2a8b5fa9e92b09e8018/developers/images/touchicon-180-new.png"><link rel="canonical" href="https://developers.google.com/speed/webp/gallery2"><link rel="search" type="application/opensearchdescription+xml"
+            title="Google for Developers" href="https://developers.google.com/s/opensearch.xml">
+      <link rel="alternate" hreflang="en"
+          href="https://developers.google.com/speed/webp/gallery2" /><link rel="alternate" hreflang="x-default" href="https://developers.google.com/speed/webp/gallery2" /><link rel="alternate" hreflang="ar"
+          href="https://developers.google.com/speed/webp/gallery2?hl=ar" /><link rel="alternate" hreflang="bn"
+          href="https://developers.google.com/speed/webp/gallery2?hl=bn" /><link rel="alternate" hreflang="zh-Hans"
+          href="https://developers.google.com/speed/webp/gallery2?hl=zh-cn" /><link rel="alternate" hreflang="zh-Hant"
+          href="https://developers.google.com/speed/webp/gallery2?hl=zh-tw" /><link rel="alternate" hreflang="fa"
+          href="https://developers.google.com/speed/webp/gallery2?hl=fa" /><link rel="alternate" hreflang="fr"
+          href="https://developers.google.com/speed/webp/gallery2?hl=fr" /><link rel="alternate" hreflang="de"
+          href="https://developers.google.com/speed/webp/gallery2?hl=de" /><link rel="alternate" hreflang="he"
+          href="https://developers.google.com/speed/webp/gallery2?hl=he" /><link rel="alternate" hreflang="hi"
+          href="https://developers.google.com/speed/webp/gallery2?hl=hi" /><link rel="alternate" hreflang="id"
+          href="https://developers.google.com/speed/webp/gallery2?hl=id" /><link rel="alternate" hreflang="it"
+          href="https://developers.google.com/speed/webp/gallery2?hl=it" /><link rel="alternate" hreflang="ja"
+          href="https://developers.google.com/speed/webp/gallery2?hl=ja" /><link rel="alternate" hreflang="ko"
+          href="https://developers.google.com/speed/webp/gallery2?hl=ko" /><link rel="alternate" hreflang="pl"
+          href="https://developers.google.com/speed/webp/gallery2?hl=pl" /><link rel="alternate" hreflang="pt-BR"
+          href="https://developers.google.com/speed/webp/gallery2?hl=pt-br" /><link rel="alternate" hreflang="ru"
+          href="https://developers.google.com/speed/webp/gallery2?hl=ru" /><link rel="alternate" hreflang="es-419"
+          href="https://developers.google.com/speed/webp/gallery2?hl=es-419" /><link rel="alternate" hreflang="th"
+          href="https://developers.google.com/speed/webp/gallery2?hl=th" /><link rel="alternate" hreflang="tr"
+          href="https://developers.google.com/speed/webp/gallery2?hl=tr" /><link rel="alternate" hreflang="vi"
+          href="https://developers.google.com/speed/webp/gallery2?hl=vi" /><title>Lossless and Alpha Gallery &nbsp;|&nbsp; WebP &nbsp;|&nbsp; Google for Developers</title>
+
+<meta property="og:title" content="Lossless and Alpha Gallery &nbsp;|&nbsp; WebP &nbsp;|&nbsp; Google for Developers"><meta property="og:url" content="https://developers.google.com/speed/webp/gallery2"><meta property="og:image" content="https://www.gstatic.com/devrel-devsite/prod/vd2dddc2199cd18ccf014281c77515e1e906f6b98324fd2a8b5fa9e92b09e8018/developers/images/opengraph/google-green.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675"><meta property="og:locale" content="en"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    
+    "headline": "Lossless and Alpha Gallery"
+  }
+</script><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "WebP",
+      "item": "https://developers.google.com/speed/webp"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Lossless and Alpha Gallery",
+      "item": "https://developers.google.com/speed/webp/gallery2"
+    }]
+  }
+  </script>
+  
+
+  
+
+  
+
+
+    
+      <link rel="stylesheet" href="/extras.css"></head>
+  <body class=""
+        template="page"
+        theme="google-green"
+        type="article"
+        
+        
+        
+        layout="docs"
+        
+        
+        
+        
+          
+            concierge='closed'
+          
+        
+        display-toc
+        pending>
+    <devsite-progress type="indeterminate" id="app-progress"></devsite-progress>
+  
+    <a href="#main-content" class="skip-link button">
+      
+      Skip to main content
+    </a>
+    <section class="devsite-wrapper">
+      <devsite-cookie-notification-bar></devsite-cookie-notification-bar><devsite-header role="banner">
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="devsite-header--inner nocontent">
+  <div class="devsite-top-logo-row-wrapper-wrapper">
+    <div class="devsite-top-logo-row-wrapper">
+      <div class="devsite-top-logo-row">
+        <button type="button" id="devsite-hamburger-menu"
+          class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+          data-category="Site-Wide Custom Events"
+          data-label="Navigation menu button"
+          visually-hidden
+          aria-label="Open menu">
+        </button>
+        <div class="devsite-product-name-wrapper">
+
+  
+    
+  
+  <a href="https://developers.google.com/speed/webp">
+    
+  <div class="devsite-product-logo-container"
+       
+       
+       
+    size="medium"
+  >
+  
+    <picture>
+      
+      <img class="devsite-product-logo"
+           alt="WebP"
+           src="https://developers.google.com/static/speed/webp/images/webp-devsite-icon.png"
+           srcset="https://developers.google.com/static/speed/webp/images/webp-devsite-icon_36.png 36w, https://developers.google.com/static/speed/webp/images/webp-devsite-icon_48.png 48w, https://developers.google.com/static/speed/webp/images/webp-devsite-icon_72.png 72w, https://developers.google.com/static/speed/webp/images/webp-devsite-icon_96.png 96w, https://developers.google.com/static/speed/webp/images/webp-devsite-icon_480.png 480w, https://developers.google.com/static/speed/webp/images/webp-devsite-icon_720.png 720w, https://developers.google.com/static/speed/webp/images/webp-devsite-icon_856.png 856w, https://developers.google.com/static/speed/webp/images/webp-devsite-icon_960.png 960w, https://developers.google.com/static/speed/webp/images/webp-devsite-icon_1440.png 1440w, https://developers.google.com/static/speed/webp/images/webp-devsite-icon_1920.png 1920w, https://developers.google.com/static/speed/webp/images/webp-devsite-icon_2880.png 2880w"
+           sizes="64px"
+           loading="lazy"
+           >
+    </picture>
+  
+  </div>
+  
+  </a>
+  
+
+  
+
+
+
+  
+  
+  <span class="devsite-product-name">
+    <ul class="devsite-breadcrumb-list"
+  >
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+    
+    
+      
+      
+        
+  <a href="https://developers.google.com/speed/webp"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Upper Header"
+      
+        data-value="1"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="1"
+      
+        track-metadata-eventdetail="WebP"
+      
+    >
+    
+          WebP
+        
+  </a>
+  
+      
+    
+  </li>
+  
+</ul>
+  </span>
+
+</div>
+        <div class="devsite-top-logo-row-middle">
+          <div class="devsite-header-upper-tabs">
+            
+           </div>
+          
+<devsite-search
+    enable-signin
+    enable-search
+    enable-suggestions
+      enable-query-completion
+    
+    
+    project-name="WebP"
+    tenant-name="Google for Developers"
+    project-scope="/speed/webp"
+    url-scoped="https://developers.google.com/s/results/speed/webp"
+    
+    
+    
+    >
+  <form class="devsite-search-form" action="https://developers.google.com/s/results" method="GET">
+    <div class="devsite-search-container">
+      <button type="button"
+              search-open
+              class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+              
+              aria-label="Open search"></button>
+      <div class="devsite-searchbox">
+        <input
+          aria-activedescendant=""
+          aria-autocomplete="list"
+          
+          aria-label="Search"
+          aria-expanded="false"
+          aria-haspopup="listbox"
+          autocomplete="off"
+          class="devsite-search-field devsite-search-query"
+          name="q"
+          
+          placeholder="Search"
+          role="combobox"
+          type="text"
+          value=""
+          >
+          <div class="devsite-search-image material-icons" aria-hidden="true">
+            
+          </div>
+          <div class="devsite-search-shortcut-icon-container" aria-hidden="true">
+            <kbd class="devsite-search-shortcut-icon">/</kbd>
+          </div>
+      </div>
+    </div>
+  </form>
+  <button type="button"
+          search-close
+          class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+          
+          aria-label="Close search"></button>
+</devsite-search>
+
+        </div>
+
+        
+
+          
+
+          
+
+        
+
+        
+
+        
+<devsite-language-selector>
+  <ul role="presentation">
+    
+    
+    <li role="presentation">
+      <a role="menuitem" lang="en"
+        >English</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="de"
+        >Deutsch</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="es"
+        >Español</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="es_419"
+        >Español – América Latina</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fr"
+        >Français</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="id"
+        >Indonesia</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="it"
+        >Italiano</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pl"
+        >Polski</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pt_br"
+        >Português – Brasil</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="vi"
+        >Tiếng Việt</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="tr"
+        >Türkçe</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ru"
+        >Русский</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="he"
+        >עברית</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ar"
+        >العربيّة</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fa"
+        >فارسی</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="hi"
+        >हिंदी</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="bn"
+        >বাংলা</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="th"
+        >ภาษาไทย</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="zh_cn"
+        >中文 – 简体</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="zh_tw"
+        >中文 – 繁體</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ja"
+        >日本語</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ko"
+        >한국어</a>
+    </li>
+    
+  </ul>
+</devsite-language-selector>
+
+
+        
+
+        
+          <devsite-user 
+                        
+                        
+                          enable-profiles
+                        
+                        
+                          fp-auth
+                        
+                        id="devsite-user">
+            
+              
+              <span class="button devsite-top-button" aria-hidden="true" visually-hidden>Sign in</span>
+            
+        </devsite-user>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="devsite-collapsible-section
+    ">
+    <div class="devsite-header-background">
+      
+        
+      
+      
+        <div class="devsite-doc-set-nav-row">
+          
+          
+            
+            
+  <devsite-tabs class="lower-tabs">
+
+    <nav class="devsite-tabs-wrapper" aria-label="Lower tabs">
+      
+        
+          <tab  >
+            
+    <a href="https://developers.google.com/speed/webp"
+    class="devsite-tabs-content gc-analytics-event "
+      track-metadata-eventdetail="https://developers.google.com/speed/webp"
+    
+       track-type="nav"
+       track-metadata-position="nav - home"
+       track-metadata-module="primary nav"
+       
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Home"
+         
+           track-name="home"
+         
+       >
+    Home
+  
+    </a>
+    
+  
+          </tab>
+        
+      
+        
+          <tab  >
+            
+    <a href="https://developers.google.com/speed/webp/docs/using"
+    class="devsite-tabs-content gc-analytics-event "
+      track-metadata-eventdetail="https://developers.google.com/speed/webp/docs/using"
+    
+       track-type="nav"
+       track-metadata-position="nav - guides"
+       track-metadata-module="primary nav"
+       
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Guides"
+         
+           track-name="guides"
+         
+       >
+    Guides
+  
+    </a>
+    
+  
+          </tab>
+        
+      
+        
+          <tab  >
+            
+    <a href="https://developers.google.com/speed/webp/faq"
+    class="devsite-tabs-content gc-analytics-event "
+      track-metadata-eventdetail="https://developers.google.com/speed/webp/faq"
+    
+       track-type="nav"
+       track-metadata-position="nav - reference"
+       track-metadata-module="primary nav"
+       
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Reference"
+         
+           track-name="reference"
+         
+       >
+    Reference
+  
+    </a>
+    
+  
+          </tab>
+        
+      
+        
+          <tab  class="devsite-active">
+            
+    <a href="https://developers.google.com/speed/webp/gallery"
+    class="devsite-tabs-content gc-analytics-event "
+      track-metadata-eventdetail="https://developers.google.com/speed/webp/gallery"
+    
+       track-type="nav"
+       track-metadata-position="nav - samples"
+       track-metadata-module="primary nav"
+       aria-label="Samples, selected" 
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Samples"
+         
+           track-name="samples"
+         
+       >
+    Samples
+  
+    </a>
+    
+  
+          </tab>
+        
+      
+        
+          <tab  >
+            
+    <a href="https://developers.google.com/speed/webp/community"
+    class="devsite-tabs-content gc-analytics-event "
+      track-metadata-eventdetail="https://developers.google.com/speed/webp/community"
+    
+       track-type="nav"
+       track-metadata-position="nav - support"
+       track-metadata-module="primary nav"
+       
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Support"
+         
+           track-name="support"
+         
+       >
+    Support
+  
+    </a>
+    
+  
+          </tab>
+        
+      
+    </nav>
+
+  </devsite-tabs>
+
+          
+          
+        </div>
+      
+    </div>
+  </div>
+
+</div>
+
+
+
+  
+</devsite-header>
+      <devsite-book-nav scrollbars >
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="devsite-book-nav-filter"
+     >
+  <span class="filter-list-icon material-icons" aria-hidden="true"></span>
+  <input type="text"
+         placeholder="Filter"
+         
+         aria-label="Type to filter"
+         role="searchbox">
+  
+  <span class="filter-clear-button hidden"
+        data-title="Clear filter"
+        aria-label="Clear filter"
+        role="button"
+        tabindex="0"></span>
+</div>
+
+<nav class="devsite-book-nav devsite-nav nocontent"
+     aria-label="Side menu">
+  <div class="devsite-mobile-header">
+    <button type="button"
+            id="devsite-close-nav"
+            class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+            data-category="Site-Wide Custom Events"
+            data-label="Close navigation"
+            aria-label="Close navigation">
+    </button>
+    <div class="devsite-product-name-wrapper">
+
+  
+    
+  
+  <a href="https://developers.google.com/speed/webp">
+    
+  <div class="devsite-product-logo-container"
+       
+       
+       
+    size="medium"
+  >
+  
+    <picture>
+      
+      <img class="devsite-product-logo"
+           alt="WebP"
+           src="https://developers.google.com/static/speed/webp/images/webp-devsite-icon.png"
+           srcset="https://developers.google.com/static/speed/webp/images/webp-devsite-icon_36.png 36w, https://developers.google.com/static/speed/webp/images/webp-devsite-icon_48.png 48w, https://developers.google.com/static/speed/webp/images/webp-devsite-icon_72.png 72w, https://developers.google.com/static/speed/webp/images/webp-devsite-icon_96.png 96w, https://developers.google.com/static/speed/webp/images/webp-devsite-icon_480.png 480w, https://developers.google.com/static/speed/webp/images/webp-devsite-icon_720.png 720w, https://developers.google.com/static/speed/webp/images/webp-devsite-icon_856.png 856w, https://developers.google.com/static/speed/webp/images/webp-devsite-icon_960.png 960w, https://developers.google.com/static/speed/webp/images/webp-devsite-icon_1440.png 1440w, https://developers.google.com/static/speed/webp/images/webp-devsite-icon_1920.png 1920w, https://developers.google.com/static/speed/webp/images/webp-devsite-icon_2880.png 2880w"
+           sizes="64px"
+           loading="lazy"
+           >
+    </picture>
+  
+  </div>
+  
+  </a>
+  
+
+  
+
+
+  
+      <span class="devsite-product-name">
+        
+        
+        <ul class="devsite-breadcrumb-list"
+  >
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+    
+    
+      
+      
+        
+  <a href="https://developers.google.com/speed/webp"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Upper Header"
+      
+        data-value="1"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="1"
+      
+        track-metadata-eventdetail="WebP"
+      
+    >
+    
+          WebP
+        
+  </a>
+  
+      
+    
+  </li>
+  
+</ul>
+      </span>
+    
+
+</div>
+  </div>
+
+  <div class="devsite-book-nav-wrapper">
+    <div class="devsite-mobile-nav-top">
+      
+        <ul class="devsite-nav-list">
+          
+            
+<li class="devsite-nav-item">
+
+  
+  <a href="/speed/webp"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              "
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: Home"
+      
+        track-name="home"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Home"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Home
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+          
+            
+<li class="devsite-nav-item">
+
+  
+  <a href="/speed/webp/docs/using"
+    
+       class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children
+              "
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: Guides"
+      
+        track-name="guides"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Guides"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Guides
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+    
+  
+  </a>
+  
+
+</li>
+
+          
+            
+<li class="devsite-nav-item">
+
+  
+  <a href="/speed/webp/faq"
+    
+       class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children
+              "
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: Reference"
+      
+        track-name="reference"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Reference"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Reference
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+    
+  
+  </a>
+  
+
+</li>
+
+          
+            
+<li class="devsite-nav-item">
+
+  
+  <a href="/speed/webp/gallery"
+    
+       class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children
+              devsite-nav-active"
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: Samples"
+      
+        track-name="samples"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Samples"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Samples
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+    
+  
+  </a>
+  
+
+</li>
+
+          
+            
+<li class="devsite-nav-item">
+
+  
+  <a href="/speed/webp/community"
+    
+       class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children
+              "
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: Support"
+      
+        track-name="support"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Support"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Support
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+    
+  
+  </a>
+  
+
+</li>
+
+          
+          
+          
+        </ul>
+      
+    </div>
+    
+      <div class="devsite-mobile-nav-bottom">
+        
+          
+          <ul class="devsite-nav-list" menu="_book">
+            <li class="devsite-nav-item
+           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path">
+        <span class="devsite-nav-text" tooltip>WebP Galleries</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/speed/webp/gallery"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /speed/webp/gallery"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/speed/webp/gallery"
+      ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/speed/webp/gallery2"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /speed/webp/gallery2"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/speed/webp/gallery2"
+      ><span class="devsite-nav-text" tooltip>Lossless and Alpha Gallery</span></a></li><li class="devsite-nav-item"><a href="/speed/webp/gallery1"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /speed/webp/gallery1"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/speed/webp/gallery1"
+      ><span class="devsite-nav-text" tooltip>Lossy Gallery</span></a></li></ul></li>
+          </ul>
+        
+        
+        
+          
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+        
+      </div>
+    
+  </div>
+</nav>
+        
+      </devsite-book-nav>
+      <section id="gc-wrapper">
+        <main role="main" id="main-content" class="devsite-main-content"
+            
+              has-book-nav
+              
+            >
+          
+          <devsite-content>
+            
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="devsite-article">
+  
+  
+  
+  
+  
+
+  <div class="devsite-article-meta nocontent" role="navigation">
+    
+    
+    <ul class="devsite-breadcrumb-list"
+  
+    aria-label="Breadcrumb">
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+    
+    
+      
+  <a href="https://developers.google.com/"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Breadcrumbs"
+      
+        data-value="1"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="1"
+      
+        track-metadata-eventdetail=""
+      
+    >
+    
+        Home
+      
+  </a>
+  
+    
+  </li>
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+      
+      <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+    
+    
+    
+      
+  <a href="https://developers.google.com/products"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Breadcrumbs"
+      
+        data-value="2"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="2"
+      
+        track-metadata-eventdetail=""
+      
+    >
+    
+        Products
+      
+  </a>
+  
+    
+  </li>
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+      
+      <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+    
+    
+    
+      
+  <a href="https://developers.google.com/speed"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Breadcrumbs"
+      
+        data-value="3"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="3"
+      
+        track-metadata-eventdetail="Make the Web Faster"
+      
+    >
+    
+        Make the Web Faster
+      
+  </a>
+  
+    
+  </li>
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+      
+      <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+    
+    
+    
+      
+  <a href="https://developers.google.com/speed/webp"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Breadcrumbs"
+      
+        data-value="4"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="4"
+      
+        track-metadata-eventdetail="WebP"
+      
+    >
+    
+        WebP
+      
+  </a>
+  
+    
+  </li>
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+      
+      <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+    
+    
+    
+      
+  <a href="https://developers.google.com/speed/webp/gallery"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Breadcrumbs"
+      
+        data-value="5"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="5"
+      
+        track-metadata-eventdetail=""
+      
+    >
+    
+        Samples
+      
+  </a>
+  
+    
+  </li>
+  
+</ul>
+    
+      
+    <devsite-thumb-rating position="header">
+    </devsite-thumb-rating>
+  
+    
+  </div>
+  
+    <h1 class="devsite-page-title" tabindex="-1">
+      Lossless and Alpha Gallery
+      
+    </h1>
+  <devsite-feature-tooltip
+      ack-key="AckCollectionsBookmarkTooltipDismiss"
+      analytics-category="Site-Wide Custom Events"
+      analytics-action-show="Callout Profile displayed"
+      analytics-action-close="Callout Profile dismissed"
+      analytics-label="Create Collection Callout"
+      class="devsite-page-bookmark-tooltip nocontent"
+      dismiss-button="true"
+      id="devsite-collections-dropdown"
+      
+      dismiss-button-text="Dismiss"
+
+      
+      close-button-text="Got it">
+
+    
+    <devsite-bookmark></devsite-bookmark>
+
+    <span slot="popout-heading">
+      
+      Stay organized with collections
+    </span>
+    <span slot="popout-contents">
+      
+      Save and categorize content based on your preferences.
+    </span>
+  </devsite-feature-tooltip>
+  
+    <devsite-key-takeaways></devsite-key-takeaways>
+    <div class="devsite-page-title-meta"><devsite-view-release-notes></devsite-view-release-notes></div>
+  
+
+  <devsite-toc class="devsite-nav"
+    depth="2"
+    devsite-toc-embedded
+    >
+  </devsite-toc>
+  
+
+  
+
+
+
+
+
+
+<div class="devsite-article-body clearfix
+  ">
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="contents_of_this_gallery" data-text="Contents of this Gallery" tabindex="-1">Contents of this Gallery</h2>
+
+<p>This gallery presents some sample images to showcase two new modes of WebP:
+WebP-lossless and WebP-lossy with alpha (transparency support).</p>
+
+<h2 id="side-by-side_comparison" data-text="Side-by-Side Comparison" tabindex="-1">Side-by-Side Comparison</h2>
+
+<p>The table below presents PNG images (compressed with pngcrush and pngout),
+WebP-lossless images and WebP-lossy images with Alpha for side-by-side
+comparison. The images are overlaid onto a checkered background as typically
+done in graphics software.</p>
+
+<p>Note that we have used webp quality 90 for WebP-lossy images with alpha and
+default quality for WebP-lossless images. See
+<a href="#reproducing_the_images">Reproducing the images</a> section for more details.</p>
+
+<p>We present the WebP images -- converted back to PNG -- for browsers not
+capable of rendering WebP. If you have a compatible browser, you can find the
+links to WebP files <a href="#webp_links">below</a>. Also, the images on this page are
+scaled down for viewing convenience. Click on any image to view the full sized
+image.</p>
+
+<p>The table also denotes the image size obtained in each mode.</p>
+
+<table>
+  <tbody>
+
+    <tr>
+      <th><p>PNG</p></td>
+      <th><p>WebP-lossless</p></td>
+      <th><p>WebP-lossy (with alpha)</p></td>
+    </tr>
+
+    <tr>
+      <td colspan="3">
+      "Yellow Rose" <a href="#credits1"><sup>1</sup></a>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <a href="https://www.gstatic.com/webp/gallery3/1.png" target="_blank">
+            <img width="240"
+               src="https://www.gstatic.com/webp/gallery3/1.sm.png"
+               style="background-image:url(https://www.gstatic.com/webp/gallery3/squares.png);"
+               border="1"/></a><br>
+        PNG optimized file size: 110.7 KB
+      </td>
+      <td>
+        <a href="https://www.gstatic.com/webp/gallery3/1_webp_ll.png" target="_blank">
+            <img width="240"
+               src="https://www.gstatic.com/webp/gallery3/1_webp_ll.sm.png"
+               style="background-image:url(https://www.gstatic.com/webp/gallery3/squares.png);"
+               alt="WebP-lossless Image"
+               border="1"/></a><br>
+        WebP-lossless file size: 79.9 KB
+      </td>
+      <td>
+        <a href="https://www.gstatic.com/webp/gallery3/1_webp_a.png" target="_blank">
+            <img width="240"
+               src="https://www.gstatic.com/webp/gallery3/1_webp_a.sm.png"
+               style="background-image:url(https://www.gstatic.com/webp/gallery3/squares.png);"
+               alt="WebP-lossy (with alpha) Image"
+               border="1"/></a><br>
+        WebP-lossy (with alpha) file size: 17.7 KB
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="3"></td>
+    </tr>
+
+    <tr>
+      <td colspan="3">
+      "baby tux for my user page"
+      <a href="#credits2"><sup>2</sup></a>
+     </td>
+    </tr>
+
+    <tr>
+      <td>
+        <a href="https://www.gstatic.com/webp/gallery3/2.png" target="_blank">
+            <img width="240"
+               src="https://www.gstatic.com/webp/gallery3/2.sm.png"
+               style="background-image:url(https://www.gstatic.com/webp/gallery3/squares.png);"
+               border="1"/></a><br>
+        PNG optimized file size: 38.1 KB
+      </td>
+      <td>
+        <a href="https://www.gstatic.com/webp/gallery3/2_webp_ll.png" target="_blank">
+            <img width="240"
+               src="https://www.gstatic.com/webp/gallery3/2_webp_ll.sm.png"
+               style="background-image:url(https://www.gstatic.com/webp/gallery3/squares.png);"
+               alt="WebP-lossless Image"
+               border="1"/></a><br>
+        WebP-lossless file size: 27.0 KB
+      </td>
+      <td>
+        <a href="https://www.gstatic.com/webp/gallery3/2_webp_a.png" target="_blank">
+            <img width="240"
+               src="https://www.gstatic.com/webp/gallery3/2_webp_a.sm.png"
+               style="background-image:url(https://www.gstatic.com/webp/gallery3/squares.png);"
+               alt="WebP-lossy (with alpha) Image"
+               border="1"/></a><br>
+        WebP-lossy (with alpha) file size: 13.8 KB
+      </td>
+    </tr>
+
+    <tr><td colspan="3"></td></tr>
+
+    <tr>
+      <td colspan="3">
+      "PNG transparency demonstration"
+      <a href="#credits3"><sup>3</sup></a>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <a href="https://www.gstatic.com/webp/gallery3/3.png" target="_blank">
+            <img width="240"
+               src="https://www.gstatic.com/webp/gallery3/3.sm.png"
+               style="background-image:url(https://www.gstatic.com/webp/gallery3/squares.png);"
+               border="1"/></a><br>
+        PNG optimized file size: 213.5 KB
+      </td>
+      <td>
+        <a href="https://www.gstatic.com/webp/gallery3/3_webp_ll.png" target="_blank">
+            <img width="240"
+               src="https://www.gstatic.com/webp/gallery3/3_webp_ll.sm.png"
+               style="background-image:url(https://www.gstatic.com/webp/gallery3/squares.png);"
+               alt="WebP-lossless Image"
+               border="1"/></a><br>
+        WebP-lossless file size: 149.0 KB
+      </td>
+      <td>
+        <a href="https://www.gstatic.com/webp/gallery3/3_webp_a.png" target="_blank">
+            <img width="240"
+               src="https://www.gstatic.com/webp/gallery3/3_webp_a.sm.png"
+               style="background-image:url(https://www.gstatic.com/webp/gallery3/squares.png);"
+               alt="WebP-lossy (with alpha) Image"
+               border="1"/></a><br>
+        WebP-lossy (with alpha) file size: 51.6 KB
+      </td>
+    </tr>
+
+    <tr><td colspan="3"></td></tr>
+
+    <tr>
+      <td colspan="3">
+      "Gregor Mendel's 189th Birthday"
+      <a href="#credits4"><sup>4</sup></a>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <a href="https://www.gstatic.com/webp/gallery3/4.png" target="_blank">
+            <img width="240"
+               src="https://www.gstatic.com/webp/gallery3/4.sm.png"
+               style="background-image:url(https://www.gstatic.com/webp/gallery3/squares.png);"
+               border="1"/></a><br>
+        PNG optimized file size: 49.2 KB
+      </td>
+      <td>
+        <a href="https://www.gstatic.com/webp/gallery3/4_webp_ll.png" target="_blank">
+            <img width="240"
+               src="https://www.gstatic.com/webp/gallery3/4_webp_ll.sm.png"
+               style="background-image:url(https://www.gstatic.com/webp/gallery3/squares.png);"
+               alt="WebP-lossless Image"
+               border="1"/></a><br>
+        WebP-lossless file size: 33.2 KB
+      </td>
+      <td>
+        <a href="https://www.gstatic.com/webp/gallery3/4_webp_a.png" target="_blank">
+            <img width="240"
+               src="https://www.gstatic.com/webp/gallery3/4_webp_a.sm.png"
+               style="background-image:url(https://www.gstatic.com/webp/gallery3/squares.png);"
+               alt="WebP-lossy (with alpha) Image"
+               border="1"/></a><br>
+        WebP-lossy (with alpha) file size: 18.3 KB
+      </td>
+    </tr>
+
+    <tr><td colspan="3"></td></tr>
+
+    <tr>
+      <td colspan="3">
+      "Transparent compass card for overlays"
+      <a href="#credits5"><sup>5</sup></a>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <a href="https://www.gstatic.com/webp/gallery3/5.png" target="_blank">
+            <img width="240"
+               src="https://www.gstatic.com/webp/gallery3/5.sm.png"
+               style="background-image:url(https://www.gstatic.com/webp/gallery3/squares.png);"
+               border="1"/></a><br>
+        PNG optimized file size: 126.8 KB
+      </td>
+      <td>
+        <a href="https://www.gstatic.com/webp/gallery3/5_webp_ll.png" target="_blank">
+            <img width="240"
+               src="https://www.gstatic.com/webp/gallery3/5_webp_ll.sm.png"
+               style="background-image:url(https://www.gstatic.com/webp/gallery3/squares.png);"
+               alt="WebP-lossless Image"
+               border="1"/></a><br>
+        WebP-lossless file size: 97.1 KB
+      </td>
+      <td>
+        <a href="https://www.gstatic.com/webp/gallery3/5_webp_a.png" target="_blank">
+            <img width="240"
+               src="https://www.gstatic.com/webp/gallery3/5_webp_a.sm.png"
+               style="background-image:url(https://www.gstatic.com/webp/gallery3/squares.png);"
+               alt="WebP-lossy (with alpha) Image"
+               border="1"/></a><br>
+        WebP-lossy (with alpha) file size: 57.3 KB
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+<p id="webp_links">Here are the links to the <strong>WebP files</strong> <em>(viewable in Chrome 22 and above)</em>:
+</p>
+
+<table>
+  <tbody>
+
+    <tr>
+      <td>
+        "Yellow Rose":
+      </td>
+      <td>
+        <a href="https://www.gstatic.com/webp/gallery3/1_webp_ll.webp">
+        WebP-lossless file</a> (80.1 KB)
+      </td>
+      <td>
+        <a href="https://www.gstatic.com/webp/gallery3/1_webp_a.webp">
+WebP-lossy (with alpha) file</a> (18.4 KB)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        "baby tux for my user page":
+      </td>
+      <td>
+        <a href="https://www.gstatic.com/webp/gallery3/2_webp_ll.webp">
+        WebP-lossless file</a> (27.0 KB)
+      </td>
+      <td>
+        <a href="https://www.gstatic.com/webp/gallery3/2_webp_a.webp">
+WebP-lossy (with alpha) file</a> (14.1 KB)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        "PNG transperancy demonstration":
+      </td>
+      <td>
+        <a href="https://www.gstatic.com/webp/gallery3/3_webp_ll.webp">
+        WebP-lossless file</a> (149.1 KB)
+      </td>
+      <td>
+        <a href="https://www.gstatic.com/webp/gallery3/3_webp_a.webp">
+WebP-lossy (with alpha) file</a> (52.6 KB)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        "Gregor Mendel's 189th Birthday":
+      </td>
+      <td>
+        <a href="https://www.gstatic.com/webp/gallery3/4_webp_ll.webp">
+        WebP-lossless file</a> (33.3 KB)
+      </td>
+      <td>
+        <a href="https://www.gstatic.com/webp/gallery3/4_webp_a.webp">
+WebP-lossy (with alpha) file</a> (19.0 KB)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        "Transparent compass card for overlays":
+      </td>
+      <td>
+        <a href="https://www.gstatic.com/webp/gallery3/5_webp_ll.webp">
+        WebP-lossless file</a> (97.1 KB)
+      </td>
+      <td>
+        <a href="https://www.gstatic.com/webp/gallery3/5_webp_a.webp">
+WebP-lossy (with alpha) file</a> (57.3 KB)
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+<h2 id="image_credits" data-text="Image Credits" tabindex="-1">Image Credits</h2>
+
+<p>The images on this page come from a number of different sources. Credits for
+the images above are listed here in order.</p>
+
+<table>
+  <tbody>
+
+    <tr>
+      <td id="credits1">1</td>
+      <td>
+      "Free Stock Photo in High Resolution - Yellow Rose 3 - Flowers"<br>
+      Image Author: Jon Sullivan<br>
+      This file is in the public domain.<br>
+      <a href="https://web.archive.org/web/20190909072451/http://www.public-domain-photos.com/free-stock-photos-4/flowers/yellow-rose-3.jpg"
+      target="_blank">
+        JPEG source</a><br>
+      </td>
+    </tr>
+
+    <tr>
+      <td id="credits2">
+        2
+      </td>
+      <td>
+      "baby tux for my user page"<br>
+      Image Author: Fizyplankton<br>
+      This file is in the public domain.<br>
+      <a href="https://web.archive.org/web/20111213095701/http://www.minecraftwiki.net/images/8/85/Fizyplankton.png"
+      target="_blank">
+        PNG source</a><br>
+      </td>
+    </tr>
+
+    <tr>
+      <td id="credits3">
+        3
+      </td>
+      <td>
+      "PNG transparency demonstration"<br>
+      Image Author: POV-Ray source code<br>
+      Photo licensed under the
+      <a href="https://en.wikipedia.org/wiki/en:Creative_Commons">
+        Creative Commons</a>
+      <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">
+        Attribution-Share Alike 3.0 Unported</a> license.<br>
+      <a
+      href="https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png"
+      target="_blank">
+        PNG source</a><br>
+      </td>
+    </tr>
+
+    <tr>
+      <td id="credits4">
+        4
+      </td>
+      <td>
+      "Gregor Mendel's 189th Birthday"<br>
+      Image Author: Google Doodle team<br>
+      Thanks to the Google Doodle team for this image.<br>
+      <a
+      href="https://www.gstatic.com/webp/gallery3/4.png"
+      target="_blank">
+        PNG source</a><br>
+      </td>
+    </tr>
+
+    <tr>
+      <td id="credits5">
+        5
+      </td>
+      <td>
+      "Transparent compass card for overlays"<br>
+      Image Author: Denelson83<br>
+      This file is licenced under the
+      <a href="https://en.wikipedia.org/wiki/en:Creative_Commons">
+        Creative Commons</a>
+      <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">
+        Attribution-Share Alike 3.0 Unported</a> license.<br>
+      <a
+      href="https://upload.wikimedia.org/wikipedia/commons/d/d3/Compass_Card_transparent.png"
+      target="_blank">
+        PNG source</a><br>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+<h2 id="reproducing_the_images" data-text="Reproducing the Images" tabindex="-1">Reproducing the Images</h2>
+
+<p>For the sake of reproducibility and to demonstrate the use of some WebP
+compression parameters, we describe here the exact steps involved when
+generating the images in this gallery.</p>
+
+<h3 id="tools" data-text="Tools" tabindex="-1">Tools</h3>
+
+<p>For PNG recompression, the best result from pngcrush 1.8.13 and ZopfliPNG 1.0.3
+is used. The following command line options are used</p>
+
+<p>Pngcrush:</p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="Text only"><code translate="no" dir="ltr">pngcrush -brute -rem tEXt -rem tIME -rem iTXt -rem zTXt -rem gAMA -rem cHRM -rem iCCP -rem sRGB -rem alla -rem text input.png output-candidate.png
+</code></pre></devsite-code>
+<p>ZopfliPNG:</p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="scdoc"><code translate="no" dir="ltr">zopflipng --lossy_transparent input.png output-candidate.png
+</code></pre></devsite-code>
+<p>ZopfliPNG with all filters:</p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="scdoc"><code translate="no" dir="ltr">zopflipng --iterations=500 --filters=01234mepb --lossy_8bit --lossy_transparent input.png output-candidate.png
+</code></pre></devsite-code>
+<p>To rescale some of the larger source pictures (for viewing only), we used a
+recent version of ImageMagick&#39;s tool named <code translate="no" dir="ltr">convert</code>, available at
+<a href="https://www.imagemagick.org">https://www.imagemagick.org</a>. The exact command-line was as follows:</p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="scdoc"><code translate="no" dir="ltr">convert image.png -resize 240x image_resized.png
+</code></pre></devsite-code>
+<h3 id="compressing_to_webp-lossless" data-text="Compressing to WebP-lossless" tabindex="-1">Compressing to WebP-lossless</h3>
+
+<p>We used the &#39;lossless&#39; option in cwebp tool for converting PNG to WebP-
+lossless. To get the minimal output, the exact command-line used was
+as follows:</p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="scdoc"><code translate="no" dir="ltr">cwebp input.png -lossless -m 6 -q 100 -o webp_lossless.webp
+</code></pre></devsite-code>
+<h3 id="rendering_webp-lossless" data-text="Rendering WebP-lossless" tabindex="-1">Rendering WebP-lossless</h3>
+
+<p>We converted WebP-lossless images back to PNG using dwebp tool for rendering.
+The exact command-line used was as follows:</p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="scdoc"><code translate="no" dir="ltr">dwebp webp_lossless.webp -o output.png
+</code></pre></devsite-code>
+<h3 id="compressing_to_webp-lossy_with_alpha" data-text="Compressing to WebP-lossy (with alpha)" tabindex="-1">Compressing to WebP-lossy (with alpha)</h3>
+
+<p>We used cwebp tool for converting PNG to WebP-lossy (with alpha). We selected
+WebP quality of 90 (lossy compression) and alpha quality of 100 (lossless
+compression). The exact command-line used was as follows:</p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="scdoc"><code translate="no" dir="ltr">cwebp input.png -q 90 -alpha_q 100 -m 6 -o webp_alpha.webp
+</code></pre></devsite-code>
+<h3 id="rendering_webp-lossy_with_alpha" data-text="Rendering WebP-lossy (with alpha)" tabindex="-1">Rendering WebP-lossy (with alpha)</h3>
+
+<p>We converted WebP-lossy (with alpha) images back to PNG using dwebp tool for
+rendering. The exact command-line used was as follows:</p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="scdoc"><code translate="no" dir="ltr">dwebp webp_alpha.webp -o output.png
+</code></pre></devsite-code>
+
+  
+
+  
+</div>
+
+  
+
+  
+    
+      <devsite-recommendations display="in-page" hidden yield>
+      </devsite-recommendations>
+    
+    
+      
+    <devsite-thumb-rating position="footer">
+    </devsite-thumb-rating>
+  
+       
+    
+    
+      <devsite-recommendations id="recommendations-link" yield></devsite-recommendations>
+    
+  
+
+  
+  <div class="devsite-floating-action-buttons">
+  
+  
+</div>
+</article>
+
+
+<devsite-content-footer class="nocontent">
+  <p>Except as otherwise noted, the content of this page is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>, and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>. For details, see the <a href="https://developers.google.com/site-policies">Google Developers Site Policies</a>. Java is a registered trademark of Oracle and/or its affiliates.</p>
+  <p>Last updated 2024-12-20 UTC.</p>
+</devsite-content-footer>
+
+
+<devsite-notification
+>
+</devsite-notification>
+
+
+  
+<div class="devsite-content-data">
+  
+  
+    <template class="devsite-content-data-template">
+      [[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Missing the information I need","missingTheInformationINeed","thumb-down"],["Too complicated / too many steps","tooComplicatedTooManySteps","thumb-down"],["Out of date","outOfDate","thumb-down"],["Samples / code issue","samplesCodeIssue","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2024-12-20 UTC."],[[["This gallery showcases sample images demonstrating WebP's lossless and lossy (with transparency) compression modes."],["It provides side-by-side comparisons of PNG, WebP-lossless, and WebP-lossy (with alpha) images, highlighting file size differences."],["The gallery includes links to view WebP files directly in compatible browsers (Chrome 22 and above)."],["Image credits and detailed instructions for reproducing the images using specific tools and command-line options are provided."]]],["This gallery compares PNG images to WebP-lossless and WebP-lossy images with alpha transparency. WebP images are showcased alongside their PNG counterparts, with file sizes noted for each format. WebP-lossy uses a quality setting of 90, while WebP-lossless uses default quality. The gallery provides links to view WebP files, and the images are displayed over a checkered background. Commands are listed for converting to and from webp using `cwebp` and `dwebp` as well as for PNG recompression.\n"]]
+    </template>
+  
+</div>
+            
+          </devsite-content>
+        </main>
+        <devsite-footer-promos class="devsite-footer">
+          
+            
+          
+        </devsite-footer-promos>
+        <devsite-footer-linkboxes class="devsite-footer">
+          
+            
+<nav class="devsite-footer-linkboxes nocontent" aria-label="Footer links">
+  
+  <ul class="devsite-footer-linkboxes-list">
+    
+    <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading no-link">Learn</h3>
+      <ul class="devsite-footer-linkbox-list">
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="https://www.webmproject.org/code/#webp-repositories"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 1)"
+            >
+            
+          
+            Code Repositories
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="https://www.webmproject.org/code/contribute/submitting-patches/"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 2)"
+            >
+            
+              
+              
+            
+          
+            Submitting Patches
+          
+          </a>
+          
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading no-link">Connect</h3>
+      <ul class="devsite-footer-linkbox-list">
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="https://groups.google.com/a/webmproject.org/group/webp-discuss"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 1)"
+            >
+            
+          
+            Mailing List
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="https://issues.webmproject.org"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 2)"
+            >
+            
+              
+              
+            
+          
+            Issue Tracker
+          
+          </a>
+          
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading no-link">Downloads</h3>
+      <ul class="devsite-footer-linkbox-list">
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="/speed/webp/download"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 1)"
+            >
+            
+              
+              
+            
+          
+            Source and Binaries
+          
+          </a>
+          
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+  
+</nav>
+          
+        </devsite-footer-linkboxes>
+        <devsite-footer-utility class="devsite-footer">
+          
+            
+
+<div class="devsite-footer-utility nocontent">
+  
+  
+  <nav class="devsite-footer-sites" aria-label="Other Google Developers websites">
+    <a href="https://developers.google.com/"
+       class="devsite-footer-sites-logo-link gc-analytics-event"
+       data-category="Site-Wide Custom Events"
+       data-label="Footer Google Developers Link">
+      <picture>
+        
+        <img class="devsite-footer-sites-logo"
+             src="https://www.gstatic.com/devrel-devsite/prod/vd2dddc2199cd18ccf014281c77515e1e906f6b98324fd2a8b5fa9e92b09e8018/developers/images/lockup-google-for-developers.svg"
+             loading="lazy"
+             alt="Google Developers">
+      </picture>
+    </a>
+    <ul class="devsite-footer-sites-list">
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//developer.android.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer Android Link"
+         
+         >
+          Android
+        </a>
+      </li>
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//developer.chrome.com/home"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer Chrome Link"
+         
+         >
+          Chrome
+        </a>
+      </li>
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//firebase.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer Firebase Link"
+         
+         >
+          Firebase
+        </a>
+      </li>
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//cloud.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer Google Cloud Platform Link"
+         
+         >
+          Google Cloud Platform
+        </a>
+      </li>
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//ai.google.dev/"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer Google AI Link"
+         
+         >
+          Google AI
+        </a>
+      </li>
+      
+      <li class="devsite-footer-sites-item">
+        <a href="/products"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer All products Link"
+         
+         >
+          All products
+        </a>
+      </li>
+      
+    </ul>
+  </nav>
+  
+
+  
+  <nav class="devsite-footer-utility-links" aria-label="Utility links">
+    
+    <ul class="devsite-footer-utility-list">
+      
+      <li class="devsite-footer-utility-item
+                 ">
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="/terms/site-terms"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Terms link"
+         >
+          Terms
+        </a>
+        
+      </li>
+      
+      <li class="devsite-footer-utility-item
+                 ">
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//policies.google.com/privacy"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Privacy link"
+         >
+          Privacy
+        </a>
+        
+      </li>
+      
+      <li class="devsite-footer-utility-item
+                 glue-cookie-notification-bar-control">
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="#"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Manage cookies link"
+         
+           aria-hidden="true"
+         >
+          Manage cookies
+        </a>
+        
+      </li>
+      
+      <li class="devsite-footer-utility-item
+                 devsite-footer-utility-button">
+        
+        <span class="devsite-footer-utility-description">Sign up for the Google for Developers newsletter</span>
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="/newsletter/subscribe"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Subscribe link"
+         >
+          Subscribe
+        </a>
+        
+      </li>
+      
+    </ul>
+    
+    
+<devsite-language-selector>
+  <ul role="presentation">
+    
+    
+    <li role="presentation">
+      <a role="menuitem" lang="en"
+        >English</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="de"
+        >Deutsch</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="es"
+        >Español</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="es_419"
+        >Español – América Latina</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fr"
+        >Français</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="id"
+        >Indonesia</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="it"
+        >Italiano</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pl"
+        >Polski</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pt_br"
+        >Português – Brasil</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="vi"
+        >Tiếng Việt</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="tr"
+        >Türkçe</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ru"
+        >Русский</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="he"
+        >עברית</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ar"
+        >العربيّة</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fa"
+        >فارسی</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="hi"
+        >हिंदी</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="bn"
+        >বাংলা</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="th"
+        >ภาษาไทย</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="zh_cn"
+        >中文 – 简体</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="zh_tw"
+        >中文 – 繁體</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ja"
+        >日本語</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ko"
+        >한국어</a>
+    </li>
+    
+  </ul>
+</devsite-language-selector>
+
+  </nav>
+</div>
+          
+        </devsite-footer-utility>
+        <devsite-panel></devsite-panel>
+        
+          <devsite-concierge
+  
+  
+    data-info-panel
+  
+  
+    data-ai-panel
+  
+  
+  
+  
+    data-api-explorer-panel
+  >
+</devsite-concierge>
+        
+      </section></section>
+    <devsite-sitemask></devsite-sitemask>
+    <devsite-snackbar></devsite-snackbar>
+    <devsite-tooltip ></devsite-tooltip>
+    <devsite-heading-link></devsite-heading-link>
+    <devsite-analytics>
+      
+        <script type="application/json" analytics>[{&#34;dimensions&#34;: {&#34;dimension11&#34;: false, &#34;dimension1&#34;: &#34;Signed out&#34;, &#34;dimension5&#34;: &#34;en&#34;, &#34;dimension3&#34;: false, &#34;dimension4&#34;: &#34;WebP&#34;, &#34;dimension6&#34;: &#34;en&#34;}, &#34;gaid&#34;: &#34;UA-24532603-1&#34;, &#34;metrics&#34;: {&#34;ratings_count&#34;: &#34;metric2&#34;, &#34;ratings_value&#34;: &#34;metric1&#34;}, &#34;purpose&#34;: 1}]</script>
+<script type="application/json" tag-management>{&#34;at&#34;: &#34;True&#34;, &#34;ga4&#34;: [{&#34;id&#34;: &#34;G-272J68FCRF&#34;, &#34;purpose&#34;: 1}], &#34;ga4p&#34;: [{&#34;id&#34;: &#34;G-272J68FCRF&#34;, &#34;purpose&#34;: 1}], &#34;gtm&#34;: [], &#34;parameters&#34;: {&#34;internalUser&#34;: &#34;False&#34;, &#34;language&#34;: {&#34;machineTranslated&#34;: &#34;False&#34;, &#34;requested&#34;: &#34;en&#34;, &#34;served&#34;: &#34;en&#34;}, &#34;pageType&#34;: &#34;article&#34;, &#34;projectName&#34;: &#34;WebP&#34;, &#34;signedIn&#34;: &#34;False&#34;, &#34;tenant&#34;: &#34;developers&#34;, &#34;recommendations&#34;: {&#34;sourcePage&#34;: &#34;&#34;, &#34;sourceType&#34;: 0, &#34;sourceRank&#34;: 0, &#34;sourceIdenticalDescriptions&#34;: 0, &#34;sourceTitleWords&#34;: 0, &#34;sourceDescriptionWords&#34;: 0, &#34;experiment&#34;: &#34;&#34;}, &#34;experiment&#34;: {&#34;ids&#34;: &#34;&#34;}}}</script>
+      
+    </devsite-analytics>
+    
+      <devsite-badger></devsite-badger>
+    
+    
+    
+<script nonce="SZ7+A6zl1k+r3jS54QMskZhdb57R8r">
+  
+  (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
+    t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
+    E.parentNode.insertBefore(t,E);})(window, document, 'script',
+    'https://www.gstatic.com/devrel-devsite/prod/vd2dddc2199cd18ccf014281c77515e1e906f6b98324fd2a8b5fa9e92b09e8018/developers/js/app_loader.js', '[1,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/vd2dddc2199cd18ccf014281c77515e1e906f6b98324fd2a8b5fa9e92b09e8018","https://www.gstatic.com/devrel-devsite/prod/vd2dddc2199cd18ccf014281c77515e1e906f6b98324fd2a8b5fa9e92b09e8018/developers","https://developers-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/developers/manifest.json","https://www.gstatic.com/devrel-devsite/prod/vd2dddc2199cd18ccf014281c77515e1e906f6b98324fd2a8b5fa9e92b09e8018/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/vd2dddc2199cd18ccf014281c77515e1e906f6b98324fd2a8b5fa9e92b09e8018/developers/images/favicon-new.png","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,21,25,50,52,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,112,113,117,118,120,122,124,125,126,127,129,130,131,132,133,134,135,136,138,140,141,147,148,149,151,152,156,157,158,159,161,163,164,168,169,170,179,180,182,183,186,191,193,196],"AIzaSyAP-jjEJBzmIyKR4F-3XITp8yM9T1gEEI8","AIzaSyB6xiKGDR5O3Ak2okS4rLkauxGUG7XP0hg","developers.google.com","AIzaSyAQk0fBONSGUqCNznf6Krs82Ap1-NV6J4o","AIzaSyCCxcqdrZ_7QMeLCRY20bh_SXdAYqy70KY",null,null,null,["Profiles__enable_join_program_group_endpoint","Profiles__enable_developer_profiles_callout","Profiles__enable_recognition_badges","Search__enable_page_map","TpcFeatures__enable_unmirrored_page_left_nav","MiscFeatureFlags__enable_view_transitions","Cloud__enable_llm_concierge_chat","MiscFeatureFlags__developers_footer_dark_image","Significatio__enable_by_tenant","Profiles__enable_completecodelab_endpoint","Search__enable_ai_eligibility_checks","DevPro__enable_cloud_innovators_plus","Profiles__enable_awarding_url","BookNav__enable_tenant_cache_key","DevPro__enable_developer_subscriptions","Concierge__enable_concierge","Cloud__enable_cloud_dlp_service","MiscFeatureFlags__emergency_css","Concierge__enable_concierge_restricted","CloudShell__cloud_shell_button","MiscFeatureFlags__developers_footer_image","MiscFeatureFlags__enable_project_variables","Cloud__enable_cloudx_ping","CloudShell__cloud_code_overflow_menu","Cloud__enable_cloud_shell","Cloud__enable_cloud_facet_chat","Profiles__enable_page_saving","Profiles__enable_complete_playlist_endpoint","Profiles__enable_public_developer_profiles","Profiles__enable_completequiz_endpoint","Profiles__enable_release_notes_notifications","Experiments__reqs_query_experiments","Cloud__enable_cloud_shell_fte_user_flow","Profiles__enable_stripe_subscription_management","Cloud__enable_cloudx_experiment_ids","Profiles__require_profile_eligibility_for_signin","Search__enable_dynamic_content_confidential_banner","EngEduTelemetry__enable_engedu_telemetry","Cloud__enable_free_trial_server_call","Concierge__enable_pushui","Profiles__enable_profile_collections","Concierge__enable_key_takeaways","Cloud__enable_legacy_calculator_redirect","MiscFeatureFlags__enable_variable_operator","Search__enable_suggestions_from_borg","MiscFeatureFlags__enable_explain_this_code","Search__enable_ai_search_summaries","Search__enable_ai_search_summaries_restricted","MiscFeatureFlags__enable_firebase_utm","TpcFeatures__enable_mirror_tenant_redirects","Profiles__enable_dashboard_curated_recommendations","Analytics__enable_clearcut_logging"],null,null,"AIzaSyBLEMok-5suZ67qRPzx0qUtbnLmyT_kCVE","https://developerscontentserving-pa.clients6.google.com","AIzaSyCM4QpTRSqP5qI4Dvjt4OAScIN8sOUlO-k","https://developerscontentsearch-pa.clients6.google.com",1,4,null,"https://developerprofiles-pa.clients6.google.com",[1,"developers","Google for Developers","developers.google.com",null,"developers-dot-devsite-v2-prod.appspot.com",null,null,[1,1,[1],null,null,null,null,null,null,null,null,[1],null,null,null,null,null,null,[1],[1,null,null,[1,20],"/recommendations/information"],null,null,null,[1,1,1],[1,1,null,1,1]],null,[null,null,null,null,null,null,"/images/lockup-new.svg","/images/touchicon-180-new.png",null,null,null,null,1,null,null,null,null,null,null,null,null,1,null,null,null,"/images/lockup-dark-theme-new.svg",[]],[],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[6,1,14,15,20,22,23,29,32,36],null,[[null,null,null,[3,7,10,2,39,17,4,32,24,11,12,13,34,15,25],null,null,[1,[["docType","Choose a content type",[["Tutorial",null,null,null,null,null,null,null,null,"Tutorial"],["Guide",null,null,null,null,null,null,null,null,"Guide"],["Sample",null,null,null,null,null,null,null,null,"Sample"]]],["product","Choose a product",[["Android",null,null,null,null,null,null,null,null,"Android"],["ARCore",null,null,null,null,null,null,null,null,"ARCore"],["ChromeOS",null,null,null,null,null,null,null,null,"ChromeOS"],["Firebase",null,null,null,null,null,null,null,null,"Firebase"],["Flutter",null,null,null,null,null,null,null,null,"Flutter"],["Assistant",null,null,null,null,null,null,null,null,"Google Assistant"],["GoogleCloud",null,null,null,null,null,null,null,null,"Google Cloud"],["GoogleMapsPlatform",null,null,null,null,null,null,null,null,"Google Maps Platform"],["GooglePay",null,null,null,null,null,null,null,null,"Google Pay & Google Wallet"],["GooglePlay",null,null,null,null,null,null,null,null,"Google Play"],["Tensorflow",null,null,null,null,null,null,null,null,"TensorFlow"]]],["category","Choose a topic",[["AiAndMachineLearning",null,null,null,null,null,null,null,null,"AI and Machine Learning"],["Data",null,null,null,null,null,null,null,null,"Data"],["Enterprise",null,null,null,null,null,null,null,null,"Enterprise"],["Gaming",null,null,null,null,null,null,null,null,"Gaming"],["Mobile",null,null,null,null,null,null,null,null,"Mobile"],["Web",null,null,null,null,null,null,null,null,"Web"]]]]]],[1,1],null,1],[[["UA-24532603-1"],["UA-22084204-5"],null,null,["UA-24532603-5"],null,null,[["G-272J68FCRF"],null,null,[["G-272J68FCRF",2]]],[["UA-24532603-1",2]],null,[["UA-24532603-5",2]],null,1],[[4,3],[12,9],[15,12],[14,11],[11,8],[13,10],[1,1],[5,4],[6,5],[3,2],[16,13]],[[1,1],[2,2]]],null,4,null,null,null,null,null,null,null,null,null,null,null,null,null,"developers.devsite.google"],null,"pk_live_5170syrHvgGVmSx9sBrnWtA5luvk9BwnVcvIi7HizpwauFG96WedXsuXh790rtij9AmGllqPtMLfhe2RSwD6Pn38V00uBCydV4m",1]')
+  
+</script>
+
+    <devsite-a11y-announce></devsite-a11y-announce>
+  </body>
+</html>
