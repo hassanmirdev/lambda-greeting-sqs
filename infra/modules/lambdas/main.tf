@@ -124,7 +124,7 @@ resource "aws_iam_policy" "lambda_cloudwatch_policy" {
 
 resource "aws_iam_role_policy_attachment" "lambda_cloudwatch_attach" {
   policy_arn = aws_iam_policy.lambda_cloudwatch_policy.arn
-  role       = aws_iam_role.lambda_execution_role.name
+  role       = aws_iam_role.greeting_lambda_execution_role.name
 }
 
 
