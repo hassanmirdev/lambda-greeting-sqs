@@ -188,6 +188,7 @@ resource "aws_api_gateway_stage" "greeting_api_stage" {
       latency          = "$context.latency"
     })
   }
+cloudwatch_role_arn = aws_iam_role.api_gateway_log_role.arn
 
   depends_on = [aws_api_gateway_deployment.greeting_api_deployment]
 }
