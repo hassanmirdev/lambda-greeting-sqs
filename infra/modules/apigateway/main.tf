@@ -107,6 +107,18 @@ resource "aws_api_gateway_deployment" "greeting_api_deployment" {
   rest_api_id = aws_api_gateway_rest_api.greeting_api.id
   stage_name  = var.tag_environment
 
+  access_log_settings {
+    destination_arn = aws_cloudwatch_log_group.api_gateway_log_group.arn
+    format          = jsonencode({
+      requestId        = "$context.requestId",
+      ip               = "$context.identity.sourceIp",
+      userAgent        = "$context.identity.userAgent",
+      status           = "$context.status",
+      responseLength   = "$context.responseLength",
+      latency          = "$context.latency"
+    })
+  }
+
   triggers = {
     redeployment = sha256(jsonencode(aws_api_gateway_rest_api.greeting_api.body))
   }
@@ -168,32 +180,5 @@ resource "aws_iam_role_policy" "api_gateway_log_policy" {
       }
     ]
   })
-}
-
-# Enable logging on API Gateway Stage
-resource "aws_api_gateway_stage" "greeting_api_stage" {
-  rest_api_id = aws_api_gateway_rest_api.greeting_api.id
-  stage_name  = var.tag_environment
-
-  deployment_id = aws_api_gateway_deployment.greeting_api_deployment.id
-
-  access_log_settings {
-    destination_arn = aws_cloudwatch_log_group.api_gateway_log_group.arn
-    format          = jsonencode({
-      requestId        = "$context.requestId",
-      ip               = "$context.identity.sourceIp",
-      userAgent        = "$context.identity.userAgent",
-      status           = "$context.status",
-      responseLength   = "$context.responseLength",
-      latency          = "$context.latency"
-    })
-  }
-
-
-lifecycle {
-    create_before_destroy = true
-  }
-
-  depends_on = [aws_api_gateway_deployment.greeting_api_deployment]
 }
 
