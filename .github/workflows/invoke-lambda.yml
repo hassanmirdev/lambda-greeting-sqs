@@ -51,8 +51,6 @@ jobs:
           BUCKET_NAME="${{ github.event.inputs.s3-bucket }}"
           aws s3 cp "$IMAGE_PATH" "s3://$BUCKET_NAME/$(basename $IMAGE_PATH)"
         env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: us-east-1
 
       # Step: Invoke Lambda function
@@ -66,6 +64,4 @@ jobs:
             --payload file://"$EVENT_FILE_PATH" \
             output.txt
         env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: us-east-1
