@@ -29,9 +29,3 @@ module "apigateway" {
   greeting_queue_arn = module.sqs.greeting_queue_arn
   tag_environment = var.environment
 }
-
-output "greeting_api_endpoint" {
-  description = "endpoint url"
-  value = module.apigateway.greeting_api_endpoint
-  
-}
