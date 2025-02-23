@@ -16,8 +16,8 @@ provider "aws" {
 
 module "storage" {
   source          = "./modules/storage"
-  src_bucket_name = "src-bucket-some-random-string"
-  dst_bucket_name = "dst-bucket-some-random-string"
+  src_bucket_name = "buckettostoreemployeeimages"
+  dst_bucket_name = "buckettostoregreetingcards"
   tag_environment = var.environment
 }
 
