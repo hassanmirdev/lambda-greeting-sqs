@@ -106,3 +106,25 @@ resource "aws_lambda_event_source_mapping" "greeting_sqs_mapping" {
   depends_on = [aws_iam_role_policy_attachment.greeting_lambda_sqs_policy_attachment]
 }
 
+resource "aws_iam_policy" "lambda_cloudwatch_policy" {
+  name        = "LambdaCloudWatchPolicy"
+  description = "Allows Lambda to write logs to CloudWatch."
+
+  policy = jsonencode({
+    Version = "2012-10-17",
+    Statement = [
+      {
+        Action   = ["logs:CreateLogGroup", "logs:CreateLogStream", "logs:PutLogEvents"],
+        Effect   = "Allow",
+        Resource = "arn:aws:logs:{region}:{account-id}:log-group:{log-group-name}" 
+      }
+    ]
+  })
+}
+
+resource "aws_iam_role_policy_attachment" "lambda_cloudwatch_attach" {
+  policy_arn = aws_iam_policy.lambda_cloudwatch_policy.arn
+  role       = aws_iam_role.lambda_execution_role.name
+}
+
+
