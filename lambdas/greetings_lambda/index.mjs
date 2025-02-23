@@ -1,6 +1,3 @@
-// Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
-// SPDX-License-Identifier: MIT-0
-
 import { S3Client, GetObjectCommand, PutObjectCommand } from "@aws-sdk/client-s3";
 const s3client = new S3Client();
 
