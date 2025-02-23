@@ -1,17 +1,17 @@
 module "storage" {
-  source          = "./modules/storage"
+  source          = "../../modules/storage"
   src_bucket_name = "buckettostoreemployeeimages"
   dst_bucket_name = "buckettostoregreetingcards"
   tag_environment = var.environment
 }
 
 module "sqs" {
-  source          = "./modules/sqs"
+  source          = "../../modules/sqs"
   tag_environment = var.environment
 }
 
 module "lambdas" { 
-    source = "./modules/lambdas"
+    source = "../../modules/lambdas"
     depends_on = [ module.storage, module.sqs ]
     src_bucket_arn = module.storage.src_bucket_arn
     src_bucket_id = module.storage.src_bucket_id
@@ -23,7 +23,7 @@ module "lambdas" {
 }
 
 module "apigateway" {
-  source = "./modules/apigateway"
+  source = "../../modules/apigateway"
   depends_on = [ module.sqs ]
   greeting_queue_name = module.sqs.greeting_queue_name
   greeting_queue_arn = module.sqs.greeting_queue_arn
