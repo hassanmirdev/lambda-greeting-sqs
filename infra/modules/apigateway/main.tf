@@ -1,4 +1,5 @@
-# Create IAM Role and policy for invoking the Greetings Queue
+# Creates an IAM role that allows API Gateway to assume it for interacting with AWS resources (specifically for sending messages to SQS).
+
 resource "aws_iam_role" "api_gateway_greeting_queue_role" {
   name = "api_gateway_greeting_queue_role"
 
@@ -16,6 +17,8 @@ resource "aws_iam_role" "api_gateway_greeting_queue_role" {
     ]
   })
 }
+# Defines a policy that grants the created IAM role permission to perform the sqs:SendMessage action on the specified SQS 
+# queue (identified by greeting_queue_arn).
 
 resource "aws_iam_role_policy" "api_gateway_greeting_queue_role_policy" {
   name = "api_gateway_greeting_queue_role_policy"
@@ -33,7 +36,8 @@ resource "aws_iam_role_policy" "api_gateway_greeting_queue_role_policy" {
   })
 }
 
-# Create the API Gateway
+# Creates an API Gateway named greeting_api that is configured to use the REGIONAL endpoint type for handling requests.
+
 resource "aws_api_gateway_rest_api" "greeting_api" {
   name        = "greeting_api"
   description = "API for invoking the Greeting Lambda Function"
@@ -46,11 +50,15 @@ resource "aws_api_gateway_rest_api" "greeting_api" {
   }
 }
 
+# Creates the /greet resource under the greeting_api API Gateway, which will be used to handle the greeting-related requests.
+
 resource "aws_api_gateway_resource" "greet_resource" {
   rest_api_id = aws_api_gateway_rest_api.greeting_api.id
   parent_id   = aws_api_gateway_rest_api.greeting_api.root_resource_id
   path_part   = "greet"
 }
+
+# Defines a POST HTTP method for the /greet resource. It does not require authorization and is set up to receive requests to invoke the greeting functionality.
 
 resource "aws_api_gateway_method" "greet_method" {
   rest_api_id   = aws_api_gateway_rest_api.greeting_api.id
@@ -59,8 +67,14 @@ resource "aws_api_gateway_method" "greet_method" {
   authorization = "NONE"
 }
 
+# These data sources retrieve the current AWS region and caller identity (AWS account ID), which are later used in the URI 
+# for the API Gateway integration and to dynamically reference the AWS account
+
 data "aws_region" "current" {}
 data "aws_caller_identity" "current" {}
+
+
+# Integrates the API Gateway POST method on /greet with an SQS queue to send messages using SendMessage.
 
 resource "aws_api_gateway_integration" "greet_method_integration" {
   rest_api_id             = aws_api_gateway_rest_api.greeting_api.id
@@ -78,6 +92,8 @@ resource "aws_api_gateway_integration" "greet_method_integration" {
   credentials = aws_iam_role.api_gateway_greeting_queue_role.arn
 }
 
+# Defines the successful response (2xx) for the POST method, returning a "status": "success" message
+
 resource "aws_api_gateway_integration_response" "integration_response_200" {
   rest_api_id = aws_api_gateway_rest_api.greeting_api.id
   resource_id = aws_api_gateway_resource.greet_resource.id
@@ -92,6 +108,8 @@ resource "aws_api_gateway_integration_response" "integration_response_200" {
   depends_on = [aws_api_gateway_integration.greet_method_integration]
 }
 
+# Configures a 200 OK response for the /greet POST method, with an empty model for JSON responses
+
 resource "aws_api_gateway_method_response" "method_response_200" {
   rest_api_id = aws_api_gateway_rest_api.greeting_api.id
   resource_id = aws_api_gateway_resource.greet_resource.id
@@ -102,6 +120,8 @@ resource "aws_api_gateway_method_response" "method_response_200" {
     "application/json" = "Empty"
   }
 }
+
+# Deploys the greeting_api to a specific stage and triggers redeployment when the configuration changes, ensuring the new API version is applied.
 
 resource "aws_api_gateway_deployment" "greeting_api_deployment" {
   rest_api_id = aws_api_gateway_rest_api.greeting_api.id
