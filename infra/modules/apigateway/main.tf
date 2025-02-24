@@ -108,7 +108,9 @@ resource "aws_api_gateway_deployment" "greeting_api_deployment" {
   stage_name  = var.tag_environment
 
   triggers = {
-    redeployment = sha256(jsonencode(aws_api_gateway_rest_api.greeting_api.body))
+    redeployment = sha256(jsonencode(aws_api_gateway_rest_api.greeting_api.body))   #SHA is often used for change detection. For instance, sha256 is used to trigger redeployment of resources (such as API Gateway deployment) when the configuration has changed.
+
+
   }
 
   lifecycle {
