@@ -1,5 +1,7 @@
-# This code sets up a Lambda function (`greeting_lambda`) that is triggered by messages from an SQS queue, interacts with S3 for file operations, and writes
-# logs to CloudWatch. It also configures the necessary IAM roles, policies, and event source mappings to allow these actions.
+/* 
+This code sets up a Lambda function (`greeting_lambda`) that is triggered by messages from an SQS queue, interacts with S3 for file operations, and writes
+logs to CloudWatch. It also configures the necessary IAM roles, policies, and event source mappings to allow these actions.
+*/
 
 
 # Creates an IAM role that allows AWS Lambda to assume the role and execute the function.
